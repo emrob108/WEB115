@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="project.js"></script>
+
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      Emily Roberts WEB-115 0003
+      <h1>Build Your Meal Plan</h1>
+    </div>
+    <form id="mealForm">
+      Name: <input type="text" id="name" /><br />
+      Email: <input type="email" id="email" required /><br />
+      Goal for the week: <input type="text" id="goal" /><br />
+      <h2>Meals</h2>
+      <div>
+        Monday:<br />
+        Breakfast: <input type="text" id="mondayBreakfast" required /><br />
+        Snack: <input type="text" id="mondaySnack1" required /><br />
+        Lunch: <input type="text" id="mondayLunch" required /><br />
+        Snack: <input type="text" id="mondaySnack2" required /><br />
+        Dinner: <input type="text" id="mondayDinner" required /><br />
+      </div>
+      <hr />
+      <div>
+        Tuesday:<br />
+        Breakfast: <input type="text" id="mondayBreakfast" required /><br />
+        Snack: <input type="text" id="mondaySnack1" required /><br />
+        Lunch: <input type="text" id="mondayLunch" required /><br />
+        Snack: <input type="text" id="mondaySnack2" required /><br />
+        Dinner: <input type="text" id="mondayDinner" required /><br />
+      </div>
+      <hr />
+      <div>
+        Wednesday:<br />
+        Breakfast: <input type="text" id="mondayBreakfast" required /><br />
+        Snack: <input type="text" id="mondaySnack1" required /><br />
+        Lunch: <input type="text" id="mondayLunch" required /><br />
+        Snack: <input type="text" id="mondaySnack2" required /><br />
+        Dinner: <input type="text" id="mondayDinner" required /><br />
+      </div>
+      <hr />
+      <div>
+        Thursday:<br />
+        Breakfast: <input type="text" id="mondayBreakfast" required /><br />
+        Snack: <input type="text" id="mondaySnack1" required /><br />
+        Lunch: <input type="text" id="mondayLunch" required /><br />
+        Snack: <input type="text" id="mondaySnack2" required /><br />
+        Dinner: <input type="text" id="mondayDinner" required /><br />
+      </div>
+      <hr />
+      <div>
+        Friday:<br />
+        Breakfast: <input type="text" id="mondayBreakfast" required /><br />
+        Snack: <input type="text" id="mondaySnack1" required /><br />
+        Lunch: <input type="text" id="mondayLunch" required /><br />
+        Snack: <input type="text" id="mondaySnack2" required /><br />
+        Dinner: <input type="text" id="mondayDinner" required /><br />
+      </div>
+
+      <input
+        type="button"
+        value="Generate Meal Plan"
+        onclick="generateMealPlan()"
+      />
+      <input type="reset" value="Clear" />
+      <input type="button" value="Print" onclick="printPlan()" />
+      <a href="" id="downloadlink" style="display: none">Download</a>
+    </form>
+  </body>
+</html>
