@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="banner text-center">
+      <h1>Build Your Meal Plan</h1>
+      <p>By Emily Roberts</p>
+      <p>Course: WEB 115 0003</p>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <form id="meal-plan-form" class="w-100 px-2">
+          <div
+            class="row justify-content-center mb-4"
+            style="padding-top: 25px"
+          >
+            <div class="col-12 col-md-6 col-lg-4">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control-sm border" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <label for="email">Email:</label>
+              <input type="text" id="email" class="form-control-sm border" />
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <label for="goal">Weekly Goal:</label>
+              <input type="text" id="goal" class="form-control-sm border" />
+            </div>
+          </div>
+
+          <div class="row justify-content-center mb-2">
+            <div class="col-12">
+              <div class="table-responsive">
+                <table
+                  class="table table-sm table-borderless table-hover custom-table"
+                >
+                  <thead>
+                    <tr>
+                      <th class="d-none d-md-table-cell">Day</th>
+                      <th class="d-none d-md-table-cell">Breakfast</th>
+                      <th class="d-none d-md-table-cell">Snack</th>
+                      <th class="d-none d-md-table-cell">Lunch</th>
+                      <th class="d-none d-md-table-cell">Snack</th>
+                      <th class="d-none d-md-table-cell">Dinner</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td data-label="">Monday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mondayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mondaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mondayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mondaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="mondayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Tuesday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="tuesdayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="tuesdaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="tuesdayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="tuesdaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="tuesdayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Wednesday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="wednesdayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="wednesdaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="wednesdayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="wednesdaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="wednesdayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Thursday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="thursdayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="thursdaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="thursdayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="thursdaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="thursdayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Friday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fridayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fridaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fridayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fridaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="fridayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Saturday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="saturdayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="saturdaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="saturdayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="saturdaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="saturdayDinner"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="">Sunday</td>
+                      <td data-label="Breakfast">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sundayBreakfast"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sundaySnack1"
+                        />
+                      </td>
+                      <td data-label="Lunch">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sundayLunch"
+                        />
+                      </td>
+                      <td data-label="Snack">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sundaySnack2"
+                        />
+                      </td>
+                      <td data-label="Dinner">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="sundayDinner"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttons text-center my-2" style="padding-bottom: 40px">
+            <input
+              type="button"
+              class="btn btn-secondary btn-md mx-2"
+              value="Generate Meal Plan"
+              onclick="generateMealPlan()"
+            />
+            <input
+              type="reset"
+              class="btn btn-secondary btn-md mx-2"
+              value="Clear"
+            />
+            <input
+              type="button"
+              class="btn btn-secondary btn-md mx-2"
+              value="Print"
+              onclick="printPlan()"
+            />
+            <a
+              href=""
+              class="btn btn-secondary btn-md mx-2"
+              id="downloadlink"
+              style="padding-top: 5px"
+              >Download</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="projectJS.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
